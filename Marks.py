@@ -1,13 +1,13 @@
-marks = [int(i) for i in input("Input some comma seprated numbers : ").split()]
+scores = [int(i) for i in input("Input score : ").split()]
 
-n=len(marks)
-temp=0
-print(marks)
-print('maximum mark is : ',max(marks))
-print('minimum mark is : ',min(marks))
-for i in marks:
+n=len(scores)
+
+print(scores)
+print('maximum score is : ',max(scores))
+print('minimum score is : ',min(scores))
+
+for i in scores:
     if i>100:
-        print('Mark exceeded 100')
-    else:
-        print('Correct insertion')
+        print('USer put a score greater than 100 is :',i)
+    print(i)
         
