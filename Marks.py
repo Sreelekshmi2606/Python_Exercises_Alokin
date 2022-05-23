@@ -1,14 +1,13 @@
-from audioop import avg
+marks = [int(i) for i in input("Input some comma seprated numbers : ").split()]
 
-
-marks = input("Input some comma seprated numbers : ")
-list1 = marks.split(",")
-list1=list(list1)
-n=len(list1)
+n=len(marks)
 temp=0
-print(list1)
-print('maximum mark is : ',max(list1))
-print('minimum mark is : ',min(list1))
+print(marks)
+print('maximum mark is : ',max(marks))
+print('minimum mark is : ',min(marks))
 for i in marks:
     if i>100:
         print('Mark exceeded 100')
+    else:
+        print('Correct insertion')
+        
