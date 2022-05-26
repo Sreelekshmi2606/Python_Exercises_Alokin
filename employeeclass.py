@@ -2,19 +2,19 @@ from statistics import harmonic_mean
 
 
 class Employee:
-    def __init__(self, emp_no,emp_name,emp_desig,emp_addr,emp_phno):
-        self.emp_no=emp_no
+    def __init__(self, emp_id,emp_name,emp_desig,emp_addr,emp_phno):
+        self.emp_id=emp_id
         self.emp_name=emp_name 
         self.emp_desig=emp_desig
         self.emp_addr=emp_addr
-        self.emp_phno=emp_no
+        self.emp_phno=emp_id
   
     # To get name
-    def getData(self, emp_no,emp_name,emp_desig,emp_addr,emp_phno):
+    def getData(self, emp_id,emp_name,emp_desig,emp_addr,emp_phno):
         print("\n")
         print("\tEmployee Details")
         print("******************************")
-        print("Employee Number       :",emp_no)
+        print("Employee Number       :",emp_id)
         print("Employee Name         :",emp_name)
         print("Eployee Designation   :",emp_desig)
         print("Eployee Address       :",emp_addr)
